@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Asocijacije</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Igra Asocijacije</h1>
+        <div id="timer">⏱️ Vreme: 180s</div>
+        <div id="points">🎯 Poeni: 0</div>
+        <div id="game-board" class="board"></div>
+        <div class="controls">
+            <input type="text" id="finalAnswer" placeholder="Konačno rešenje" />
+            <button onclick="checkFinal()">Proveri</button>
+            <button onclick="restartGame()">Nova igra</button>
+        </div>
+        <div id="scoreboard" class="scoreboard"></div>
+    </div>
+</body>
+</html>
